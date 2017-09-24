@@ -1,9 +1,11 @@
 extends ../layouts/layout
 block main
     section.page
-        h1.heading.heading-attention
-            |Главная страница
-    section.content
-        include ../blocks/icon-block
-        svg
-            use(xlink:href="#1-clock")
+        img(src=require("../../images/img-person-main.png"), alt="Алена Анчерите")
+        h1.heading
+            | Алена
+            strong.extra-wide &nbsp;Анчерите
+        p.description.
+            Профессиональный коуч <br>
+            и бизнес-тренер.
+    include ../blocks/social.pug
