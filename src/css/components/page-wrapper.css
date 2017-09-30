@@ -1,0 +1,6 @@
+.page-wrapper {
+    min-height: 100%;
+    color: #3a4354;
+    min-width: 320px;
+    background: linear-gradient(160deg, #fffce8 0%, #e9fcff 100%);
+}

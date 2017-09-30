@@ -1,0 +1,10 @@
+.main-image {
+    margin: 0;
+    box-shadow: 0 0 65px rgba(41, 50, 66, 0.35);
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}

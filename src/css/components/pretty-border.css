@@ -1,0 +1,6 @@
+.pretty-border {
+    @media (min-width: $media-middle) {
+        border: 5px solid transparent;
+        border-image: linear-gradient(140deg, #bcd4fd 0%, #d2839b 50%, #9290d3 100%) 1;
+    }
+}

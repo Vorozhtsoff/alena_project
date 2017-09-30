@@ -1,0 +1,16 @@
+.extra-wide {
+    font-weight: 800;
+    font-size: 44px;
+
+    @media (min-width: $media-small) {
+        font-size: 48px;
+    }
+
+    @media (min-width: $media-middle) {
+        display: block;
+    }
+
+    @media (min-width: $media-large) {
+        font-size: 72px;
+    }
+}

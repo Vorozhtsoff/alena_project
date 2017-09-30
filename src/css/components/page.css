@@ -1,0 +1,27 @@
+.page {
+    padding: 0 20px;
+    min-height: 100vh;
+
+    &__in {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+
+    @media (min-width: $media-middle) {
+        padding-top: 60px;
+
+        &__in {
+            text-align: left;
+        }
+    }
+
+    @media (min-width: $media-large) {
+        max-width: none;
+
+        &--tiled {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

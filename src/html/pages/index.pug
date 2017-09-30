@@ -1,11 +1,16 @@
 extends ../layouts/layout
 block main
-    section.page
-        img(src=require("../../images/img-person-main.png"), alt="Алена Анчерите")
-        h1.heading
-            | Алена
-            strong.extra-wide &nbsp;Анчерите
-        p.description.
-            Профессиональный коуч <br>
-            и бизнес-тренер.
-    include ../blocks/social.pug
+    section.page.page--tiled
+        .page__in
+            .pretty-tile.clearfix
+                .pretty-tile__image.main-image
+                    img.main-image__image(src=require("../../images/img-person-main.png"), alt="Алена Анчерите")
+                .pretty-tile__content.pretty-border
+                    h1.heading
+                        | Алена
+                        |
+                        strong.extra-wide Анчерите
+                    p.description.
+                        Профессиональный коуч <br>
+                        и бизнес-тренер.
+            include ../blocks/social.pug

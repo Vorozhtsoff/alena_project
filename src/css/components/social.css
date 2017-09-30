@@ -1,0 +1,32 @@
+.social {
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 0;
+
+    &__list {
+        list-style-type: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0 -30px;
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        margin: 0 15px;
+        transition: all .3s;
+
+        @media (min-width: 500px) {
+            margin: 0 30px;
+        }
+    }
+
+    @media (min-width: $media-small) {
+        padding: 40px 0;
+    }
+
+    @media (min-width: $media-large) {
+        padding: 50px 0;
+    }
+}
