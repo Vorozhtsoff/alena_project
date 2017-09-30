@@ -22,7 +22,7 @@ const webpackConfig = function(options) {
             app: [helpers.root('src', 'js', 'index.js')]
         },
         output: {
-            path: helpers.root('build'),
+            path: helpers.root('docs'),
             publicPath: is_prod ? '' : '/',
             filename: js_folder + '[name].js'
         },
@@ -104,7 +104,7 @@ const webpackConfig = function(options) {
             new CopyWebpackPlugin([
                 {
                     from: helpers.root('src', 'static'),
-                    to: helpers.root('build', 'static')
+                    to: helpers.root('docs', 'static')
                 }
             ])
         ]
